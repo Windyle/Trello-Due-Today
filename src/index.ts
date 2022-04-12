@@ -1,10 +1,7 @@
-// TEST ONLY
-process.env["NODE_TLS_REJECT_UNAUTHORIZED"] = '0';
-// TEST ONLY
+// process.env["NODE_TLS_REJECT_UNAUTHORIZED"] = '0';
 
 const axios = require('axios');
 require('dotenv').config();
-
 
 interface Card {
   id: string;
@@ -36,13 +33,12 @@ axios(config)
         'Content-Type': 'application/json', 
       },
       data : {
-        due: new Date().toISOString().split('T')[0] + 'T21:59:59Z'
+        due: new Date().toISOString().split('T')[0] + 'T' + (23 + (new Date().getTimezoneOffset() / 60)) + ':59:59Z'
       }
     };
     
     axios(updateConfig)
     .then(function (updateResponse: any) {
-      console.log(JSON.stringify(updateResponse.data))
       console.log("Set due date to today for card: " + card.id);
     })
     .catch(function (updateError: any) {
