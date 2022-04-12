@@ -20,7 +20,7 @@ BOARD_ID=
 
 ![image](https://user-images.githubusercontent.com/37779707/162958849-d18595bf-04f3-447b-a9b7-fbeb71f334a6.png)
 
-6. Populate the previouse three fields and run `npx tsc --build`
+6. Populate the previous three fields and run `npx tsc --build`
 7. To obtain the List Id run `npm run listid`. The console will show you the board's lists and you can copy the id of the wanted list.
 8. To start the program run `npm start`
 
