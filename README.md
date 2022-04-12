@@ -6,7 +6,7 @@ Simple tool to keep Trello overdue tasks due to date (for people with too many t
 
 1. Clone the Repository
 2. Run `npm install`
-3. Create .env file in root directory with the following structure:
+3. Create _.env_ file in root directory with the following structure:
 
 ```
 API_KEY=
@@ -18,7 +18,7 @@ BOARD_ID=
 4. The Api Key and Api Token can be generated at https://trello.com/app-key
 5. The Board Id can be obtained from the board url:
 
-![image](https://user-images.githubusercontent.com/37779707/162939045-a6aeb28b-abc9-4ff2-9139-dabc98108fce.png)
+![image](https://user-images.githubusercontent.com/37779707/162958849-d18595bf-04f3-447b-a9b7-fbeb71f334a6.png)
 
 6. Populate the previouse three fields and run `npx tsc --build`
 7. To obtain the List Id run `npm run listid`. The console will show you the board's lists and you can copy the id of the wanted list.
