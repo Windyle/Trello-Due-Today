@@ -29,6 +29,6 @@ Every overdue task in the provided list will be updated with a new due date set 
 
 ## Notes
 
-Some offices have a particular SSL protection, the following line on top of both index.ts and listid.ts can be uncommented if you want to bypass that protection:
+Some workplaces have a particular SSL protection, the following line on top of both index.ts and listid.ts can be uncommented if you want to bypass that protection:
 
 `// process.env["NODE_TLS_REJECT_UNAUTHORIZED"] = '0';`
